@@ -15,7 +15,7 @@ This framework extends UIKit with very useful extensions.
 
 Latest stable release is always available in [releases](https://github.com/MobileToolkit/UIKit-Extensions/releases) (both binary & source).
 
-The recommended way to install StoryboardNavigator is to download the binary release.
+The recommended way to install UIKit-Extensions is to download the binary release.
 After downloading please unzip it and just drag & drop **UIKit-Extensions.framework** into your Xcode project.
 
 ## Getting Started
