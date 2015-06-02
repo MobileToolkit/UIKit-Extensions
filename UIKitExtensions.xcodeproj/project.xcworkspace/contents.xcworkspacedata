@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:UIKit-Extensions.xcodeproj">
+      location = "self:/Users/suntrix/Developer/UIKit-Extensions/UIKitExtensions.xcodeproj">
    </FileRef>
 </Workspace>

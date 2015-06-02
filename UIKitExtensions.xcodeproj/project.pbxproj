@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		E95E36951B1B02F6004E55E3 /* UIKit-ExtensionsFramework */ = {
+		E95E36951B1B02F6004E55E3 /* UIKitExtensionsFramework */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = E95E36961B1B02F6004E55E3 /* Build configuration list for PBXAggregateTarget "UIKit-ExtensionsFramework" */;
+			buildConfigurationList = E95E36961B1B02F6004E55E3 /* Build configuration list for PBXAggregateTarget "UIKitExtensionsFramework" */;
 			buildPhases = (
 				E95E369B1B1B0302004E55E3 /* Build Fat Library */,
 			);
 			dependencies = (
 				E95E369A1B1B02FF004E55E3 /* PBXTargetDependency */,
 			);
-			name = "UIKit-ExtensionsFramework";
-			productName = "UIKit-ExtensionsFramework";
+			name = UIKitExtensionsFramework;
+			productName = "UIKitExtensionsFramework";
 		};
 /* End PBXAggregateTarget section */
 
@@ -32,8 +32,8 @@
 		E95E368F1B1A130E004E55E3 /* UIDevice+ExtendedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E95E368D1B1A130E004E55E3 /* UIDevice+ExtendedInfo.m */; };
 		E95E36931B1AFF78004E55E3 /* UINavigationItem+IBOutlets.h in Headers */ = {isa = PBXBuildFile; fileRef = E95E36911B1AFF78004E55E3 /* UINavigationItem+IBOutlets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E95E36941B1AFF78004E55E3 /* UINavigationItem+IBOutlets.m in Sources */ = {isa = PBXBuildFile; fileRef = E95E36921B1AFF78004E55E3 /* UINavigationItem+IBOutlets.m */; };
-		E9C06BC91B1532430081320A /* UIKit-Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C06BC81B1532430081320A /* UIKit-Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9C06BCF1B1532440081320A /* UIKit-Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C06BC31B1532430081320A /* UIKit-Extensions.framework */; };
+		E9C06BC91B1532430081320A /* UIKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C06BC81B1532430081320A /* UIKitExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C06BCF1B1532440081320A /* UIKitExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C06BC31B1532430081320A /* UIKitExtensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +42,14 @@
 			containerPortal = E9C06BBA1B1532430081320A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E9C06BC21B1532430081320A;
-			remoteInfo = "UIKit-Extensions";
+			remoteInfo = "UIKitExtensions";
 		};
 		E9C06BD01B1532440081320A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E9C06BBA1B1532430081320A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E9C06BC21B1532430081320A;
-			remoteInfo = "UIKit-Extensions";
+			remoteInfo = "UIKitExtensions";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,10 +64,10 @@
 		E95E368D1B1A130E004E55E3 /* UIDevice+ExtendedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ExtendedInfo.m"; sourceTree = "<group>"; };
 		E95E36911B1AFF78004E55E3 /* UINavigationItem+IBOutlets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+IBOutlets.h"; sourceTree = "<group>"; };
 		E95E36921B1AFF78004E55E3 /* UINavigationItem+IBOutlets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+IBOutlets.m"; sourceTree = "<group>"; };
-		E9C06BC31B1532430081320A /* UIKit-Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "UIKit-Extensions.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C06BC31B1532430081320A /* UIKitExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C06BC71B1532430081320A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9C06BC81B1532430081320A /* UIKit-Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit-Extensions.h"; sourceTree = "<group>"; };
-		E9C06BCE1B1532440081320A /* UIKit-ExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIKit-ExtensionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C06BC81B1532430081320A /* UIKitExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitExtensions.h; sourceTree = "<group>"; };
+		E9C06BCE1B1532440081320A /* UIKitExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C06BD41B1532440081320A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9C06BDF1B15358E0081320A /* FatLibraryBuildScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = FatLibraryBuildScript.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C06BCF1B1532440081320A /* UIKit-Extensions.framework in Frameworks */,
+				E9C06BCF1B1532440081320A /* UIKitExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +94,8 @@
 		E9C06BB91B1532430081320A = {
 			isa = PBXGroup;
 			children = (
-				E9C06BC51B1532430081320A /* UIKit-Extensions */,
-				E9C06BD21B1532440081320A /* UIKit-ExtensionsTests */,
+				E9C06BC51B1532430081320A /* UIKitExtensions */,
+				E9C06BD21B1532440081320A /* UIKitExtensionsTests */,
 				E9C06BC41B1532430081320A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,20 +103,21 @@
 		E9C06BC41B1532430081320A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9C06BC31B1532430081320A /* UIKit-Extensions.framework */,
-				E9C06BCE1B1532440081320A /* UIKit-ExtensionsTests.xctest */,
+				E9C06BC31B1532430081320A /* UIKitExtensions.framework */,
+				E9C06BCE1B1532440081320A /* UIKitExtensionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9C06BC51B1532430081320A /* UIKit-Extensions */ = {
+		E9C06BC51B1532430081320A /* UIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				E9C06BE11B1535960081320A /* Categories */,
-				E9C06BC81B1532430081320A /* UIKit-Extensions.h */,
+				E9C06BC81B1532430081320A /* UIKitExtensions.h */,
 				E9C06BC61B1532430081320A /* Supporting Files */,
 			);
-			path = "UIKit-Extensions";
+			name = UIKitExtensions;
+			path = "UIKitExtensions";
 			sourceTree = "<group>";
 		};
 		E9C06BC61B1532430081320A /* Supporting Files */ = {
@@ -128,14 +129,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E9C06BD21B1532440081320A /* UIKit-ExtensionsTests */ = {
+		E9C06BD21B1532440081320A /* UIKitExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
 				E9C06BD31B1532440081320A /* Supporting Files */,
 				E95E36841B16931C004E55E3 /* UIColor+Equal_Tests.m */,
 				E95E368A1B1A02AE004E55E3 /* UIColor+Hex_Tests.m */,
 			);
-			path = "UIKit-ExtensionsTests";
+			path = "UIKitExtensionsTests";
 			sourceTree = "<group>";
 		};
 		E9C06BD31B1532440081320A /* Supporting Files */ = {
@@ -171,7 +172,7 @@
 				E95E36931B1AFF78004E55E3 /* UINavigationItem+IBOutlets.h in Headers */,
 				E95E36881B1A022A004E55E3 /* UIColor+Hex.h in Headers */,
 				E95E36801B169268004E55E3 /* UIColor+Equal.h in Headers */,
-				E9C06BC91B1532430081320A /* UIKit-Extensions.h in Headers */,
+				E9C06BC91B1532430081320A /* UIKitExtensions.h in Headers */,
 				E95E368E1B1A130E004E55E3 /* UIDevice+ExtendedInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,9 +180,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E9C06BC21B1532430081320A /* UIKit-Extensions */ = {
+		E9C06BC21B1532430081320A /* UIKitExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9C06BD91B1532440081320A /* Build configuration list for PBXNativeTarget "UIKit-Extensions" */;
+			buildConfigurationList = E9C06BD91B1532440081320A /* Build configuration list for PBXNativeTarget "UIKitExtensions" */;
 			buildPhases = (
 				E9C06BBE1B1532430081320A /* Sources */,
 				E9C06BBF1B1532430081320A /* Frameworks */,
@@ -192,14 +193,14 @@
 			);
 			dependencies = (
 			);
-			name = "UIKit-Extensions";
-			productName = "UIKit-Extensions";
-			productReference = E9C06BC31B1532430081320A /* UIKit-Extensions.framework */;
+			name = UIKitExtensions;
+			productName = "UIKitExtensions";
+			productReference = E9C06BC31B1532430081320A /* UIKitExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E9C06BCD1B1532440081320A /* UIKit-ExtensionsTests */ = {
+		E9C06BCD1B1532440081320A /* UIKitExtensionsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9C06BDC1B1532440081320A /* Build configuration list for PBXNativeTarget "UIKit-ExtensionsTests" */;
+			buildConfigurationList = E9C06BDC1B1532440081320A /* Build configuration list for PBXNativeTarget "UIKitExtensionsTests" */;
 			buildPhases = (
 				E9C06BCA1B1532440081320A /* Sources */,
 				E9C06BCB1B1532440081320A /* Frameworks */,
@@ -210,9 +211,9 @@
 			dependencies = (
 				E9C06BD11B1532440081320A /* PBXTargetDependency */,
 			);
-			name = "UIKit-ExtensionsTests";
-			productName = "UIKit-ExtensionsTests";
-			productReference = E9C06BCE1B1532440081320A /* UIKit-ExtensionsTests.xctest */;
+			name = UIKitExtensionsTests;
+			productName = "UIKitExtensionsTests";
+			productReference = E9C06BCE1B1532440081320A /* UIKitExtensionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +236,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E9C06BBD1B1532430081320A /* Build configuration list for PBXProject "UIKit-Extensions" */;
+			buildConfigurationList = E9C06BBD1B1532430081320A /* Build configuration list for PBXProject "UIKitExtensions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -247,9 +248,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9C06BC21B1532430081320A /* UIKit-Extensions */,
-				E9C06BCD1B1532440081320A /* UIKit-ExtensionsTests */,
-				E95E36951B1B02F6004E55E3 /* UIKit-ExtensionsFramework */,
+				E9C06BC21B1532430081320A /* UIKitExtensions */,
+				E9C06BCD1B1532440081320A /* UIKitExtensionsTests */,
+				E95E36951B1B02F6004E55E3 /* UIKitExtensionsFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/UIKit-Extensions/FatLibraryBuildScript.sh\n";
+			shellScript = "${SRCROOT}/UIKitExtensions/FatLibraryBuildScript.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -314,12 +315,12 @@
 /* Begin PBXTargetDependency section */
 		E95E369A1B1B02FF004E55E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9C06BC21B1532430081320A /* UIKit-Extensions */;
+			target = E9C06BC21B1532430081320A /* UIKitExtensions */;
 			targetProxy = E95E36991B1B02FF004E55E3 /* PBXContainerItemProxy */;
 		};
 		E9C06BD11B1532440081320A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9C06BC21B1532430081320A /* UIKit-Extensions */;
+			target = E9C06BC21B1532430081320A /* UIKitExtensions */;
 			targetProxy = E9C06BD01B1532440081320A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -328,14 +329,14 @@
 		E95E36971B1B02F6004E55E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIKitExtensionsFramework;
 			};
 			name = Debug;
 		};
 		E95E36981B1B02F6004E55E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIKitExtensionsFramework;
 			};
 			name = Release;
 		};
@@ -430,15 +431,15 @@
 		E9C06BDA1B1532440081320A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "UIKit-Extensions/Info.plist";
+				INFOPLIST_FILE = "UIKitExtensions/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIKitExtensions;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -446,15 +447,15 @@
 		E9C06BDB1B1532440081320A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "UIKit-Extensions/Info.plist";
+				INFOPLIST_FILE = "UIKitExtensions/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIKitExtensions;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -470,15 +471,13 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "UIKit-ExtensionsTests/Info.plist";
+				INFOPLIST_FILE = "UIKitExtensionsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-framework",
-					XCTest,
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIKitExtensionsTests;
 			};
 			name = Debug;
 		};
@@ -489,22 +488,20 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "UIKit-ExtensionsTests/Info.plist";
+				INFOPLIST_FILE = "UIKitExtensionsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-framework",
-					XCTest,
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UIKitExtensionsTests;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E95E36961B1B02F6004E55E3 /* Build configuration list for PBXAggregateTarget "UIKit-ExtensionsFramework" */ = {
+		E95E36961B1B02F6004E55E3 /* Build configuration list for PBXAggregateTarget "UIKitExtensionsFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E95E36971B1B02F6004E55E3 /* Debug */,
@@ -512,7 +509,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		E9C06BBD1B1532430081320A /* Build configuration list for PBXProject "UIKit-Extensions" */ = {
+		E9C06BBD1B1532430081320A /* Build configuration list for PBXProject "UIKitExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9C06BD71B1532440081320A /* Debug */,
@@ -521,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9C06BD91B1532440081320A /* Build configuration list for PBXNativeTarget "UIKit-Extensions" */ = {
+		E9C06BD91B1532440081320A /* Build configuration list for PBXNativeTarget "UIKitExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9C06BDA1B1532440081320A /* Debug */,
@@ -530,7 +527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9C06BDC1B1532440081320A /* Build configuration list for PBXNativeTarget "UIKit-ExtensionsTests" */ = {
+		E9C06BDC1B1532440081320A /* Build configuration list for PBXNativeTarget "UIKitExtensionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9C06BDD1B1532440081320A /* Debug */,

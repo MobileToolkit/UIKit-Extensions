@@ -1,6 +1,6 @@
 //
 //  UIColor+Equal.m
-//  UIKit-Extensions
+//  UIKitExtensions
 //
 //  Created by Sebastian Owodziń on 28/05/2015.
 //  Copyright (c) 2015 mobiletoolkit.org. All rights reserved.
