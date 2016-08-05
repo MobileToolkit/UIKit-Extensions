@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92A2C981D532A0200F7C3AC /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A2C971D532A0200F7C3AC /* UIColor+HexColor.swift */; };
+		E92A2C9D1D532CAF00F7C3AC /* UIColor+HexColor_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A2C9B1D532BD100F7C3AC /* UIColor+HexColor_Tests.swift */; };
 		E96309601CCE918200F4C238 /* UIKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E963095F1CCE918200F4C238 /* UIKitExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E96309671CCE918200F4C238 /* UIKitExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E963095C1CCE918200F4C238 /* UIKitExtensions.framework */; };
 		E963096C1CCE918200F4C238 /* UIColor+Equatable_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E963096B1CCE918200F4C238 /* UIColor+Equatable_Tests.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E92A2C971D532A0200F7C3AC /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
+		E92A2C9B1D532BD100F7C3AC /* UIColor+HexColor_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor_Tests.swift"; sourceTree = "<group>"; };
 		E963095C1CCE918200F4C238 /* UIKitExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E963095F1CCE918200F4C238 /* UIKitExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitExtensions.h; sourceTree = "<group>"; };
 		E96309611CCE918200F4C238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +56,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E92A2C991D532A1200F7C3AC /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				E96309781CCE92BD00F4C238 /* UIColor+Equatable.swift */,
+				E92A2C971D532A0200F7C3AC /* UIColor+HexColor.swift */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		E92A2C9A1D532BB500F7C3AC /* UIColor Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E963096B1CCE918200F4C238 /* UIColor+Equatable_Tests.swift */,
+				E92A2C9B1D532BD100F7C3AC /* UIColor+HexColor_Tests.swift */,
+			);
+			name = "UIColor Tests";
+			sourceTree = "<group>";
+		};
 		E96309521CCE918200F4C238 = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +95,7 @@
 		E963095E1CCE918200F4C238 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E96309781CCE92BD00F4C238 /* UIColor+Equatable.swift */,
+				E92A2C991D532A1200F7C3AC /* UIColor */,
 				E96309761CCE928B00F4C238 /* Supporting Files */,
 			);
 			path = Sources;
@@ -82,7 +104,7 @@
 		E963096A1CCE918200F4C238 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E963096B1CCE918200F4C238 /* UIColor+Equatable_Tests.swift */,
+				E92A2C9A1D532BB500F7C3AC /* UIColor Tests */,
 				E96309771CCE929600F4C238 /* Supporting Files */,
 			);
 			path = Tests;
@@ -232,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E96309791CCE92BD00F4C238 /* UIColor+Equatable.swift in Sources */,
+				E92A2C981D532A0200F7C3AC /* UIColor+HexColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E963096C1CCE918200F4C238 /* UIColor+Equatable_Tests.swift in Sources */,
+				E92A2C9D1D532CAF00F7C3AC /* UIColor+HexColor_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,19 +22,20 @@ class UIColor_Equatable_Tests: XCTestCase {
     }
 
     func testEqualColors() {
-        XCTAssertTrue(UIColor.redColor() == UIColor.redColor())
-        XCTAssertFalse(UIColor.blueColor() == UIColor.redColor())
+        XCTAssertEqual(UIColor.redColor(), UIColor.redColor())
+
+        XCTAssertNotEqual(UIColor.blueColor(), UIColor.redColor())
     }
 
     func testEqualCustomColors() {
-        let color = UIColor(red: 100.0/255.0, green:50.0/255.0, blue:150.0/255.0, alpha:200.0/255.0)
-        let equalColor = UIColor(red: 100.0/255.0, green:50.0/255.0, blue:150.0/255.0, alpha:200.0/255.0)
+        let expectedColor = UIColor(red: 100.0/255.0, green: 50.0/255.0, blue: 150.0/255.0, alpha: 200.0/255.0)
 
-        XCTAssertTrue(color == equalColor)
+        XCTAssertEqual(UIColor(red: 100.0/255.0, green: 50.0/255.0, blue: 150.0/255.0, alpha: 200.0/255.0), expectedColor)
 
-        let differentColor = UIColor(red: 100.0/255.0, green:51.0/255.0, blue:150.0/255.0, alpha:200.0/255.0)
-
-        XCTAssertFalse(color == differentColor)
+        XCTAssertNotEqual(UIColor(red: 101.0/255.0, green: 50.0/255.0, blue: 150.0/255.0, alpha: 200.0/255.0), expectedColor) // red is different
+        XCTAssertNotEqual(UIColor(red: 100.0/255.0, green: 51.0/255.0, blue: 150.0/255.0, alpha: 200.0/255.0), expectedColor) // green is different
+        XCTAssertNotEqual(UIColor(red: 100.0/255.0, green: 50.0/255.0, blue: 151.0/255.0, alpha: 200.0/255.0), expectedColor) // blue is different
+        XCTAssertNotEqual(UIColor(red: 100.0/255.0, green: 50.0/255.0, blue: 150.0/255.0, alpha: 201.0/255.0), expectedColor) // alpha is different
     }
 
 }
