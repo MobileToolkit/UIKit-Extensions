@@ -37,43 +37,43 @@ extension UIColor {
     }
 
     public convenience init(rgbaString: String) {
-        let hexString = rgbaString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        let scanner = NSScanner(string: hexString)
+        let hexString = rgbaString.trimmingCharacters(in: CharacterSet.whitespaces)
+        let scanner = Scanner(string: hexString)
 
         if hexString.hasPrefix("#") {
             scanner.scanLocation = 1
         }
 
         var color: UInt32 = 0
-        scanner.scanHexInt(&color)
+        scanner.scanHexInt32(&color)
 
         self.init(rgba: color)
     }
 
     public convenience init(argbString: String) {
-        let hexString = argbString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        let scanner = NSScanner(string: hexString)
+        let hexString = argbString.trimmingCharacters(in: CharacterSet.whitespaces)
+        let scanner = Scanner(string: hexString)
 
         if hexString.hasPrefix("#") {
             scanner.scanLocation = 1
         }
 
         var color: UInt32 = 0
-        scanner.scanHexInt(&color)
+        scanner.scanHexInt32(&color)
 
         self.init(argb: color)
     }
 
     public convenience init(rgbString: String) {
-        let hexString = rgbString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        let scanner = NSScanner(string: hexString)
+        let hexString = rgbString.trimmingCharacters(in: CharacterSet.whitespaces)
+        let scanner = Scanner(string: hexString)
 
         if hexString.hasPrefix("#") {
             scanner.scanLocation = 1
         }
 
         var color: UInt32 = 0
-        scanner.scanHexInt(&color)
+        scanner.scanHexInt32(&color)
 
         self.init(rgb: color)
     }

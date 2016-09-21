@@ -8,7 +8,7 @@
 
 import UIKit
 
-public func ==(lhs: UIColor, rhs: UIColor) -> Bool {
+public func == (lhs: UIColor, rhs: UIColor) -> Bool {
     let tolerance: CGFloat = 0.0001
 
     var lhsR: CGFloat = 0

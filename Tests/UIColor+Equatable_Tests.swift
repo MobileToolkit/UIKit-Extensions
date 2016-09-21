@@ -22,9 +22,9 @@ class UIColor_Equatable_Tests: XCTestCase {
     }
 
     func testEqualColors() {
-        XCTAssertEqual(UIColor.redColor(), UIColor.redColor())
+        XCTAssertEqual(UIColor.red, UIColor.red)
 
-        XCTAssertNotEqual(UIColor.blueColor(), UIColor.redColor())
+        XCTAssertNotEqual(UIColor.blue, UIColor.red)
     }
 
     func testEqualCustomColors() {
