@@ -11,16 +11,6 @@ import XCTest
 
 class UIColor_HexColor_Tests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
     func testRGBColorUInt32() {
         let expectedColor = UIColor(rgb: 0xCC6699)
 
@@ -62,7 +52,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 1.0), expectedColor) // blue is different
 
-
         expectedColor = UIColor(rgbString: "cc6699")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor)
@@ -70,7 +59,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 205.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor) // red is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 1.0), expectedColor) // blue is different
-
 
         expectedColor = UIColor(rgbString: "0xCC6699")
 
@@ -80,7 +68,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 1.0), expectedColor) // blue is different
 
-
         expectedColor = UIColor(rgbString: "0xcc6699")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor)
@@ -89,7 +76,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 1.0), expectedColor) // blue is different
 
-
         expectedColor = UIColor(rgbString: "#CC6699")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor)
@@ -97,7 +83,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 205.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor) // red is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 1.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 1.0), expectedColor) // blue is different
-
 
         expectedColor = UIColor(rgbString: "#cc6699")
 
@@ -118,7 +103,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
 
-
         expectedColor = UIColor(rgbaString: "cc669964")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor)
@@ -127,7 +111,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
-
 
         expectedColor = UIColor(rgbaString: "0xCC669964")
 
@@ -138,7 +121,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
 
-
         expectedColor = UIColor(rgbaString: "0xcc669964")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor)
@@ -148,7 +130,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
 
-
         expectedColor = UIColor(rgbaString: "#CC669964")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor)
@@ -157,7 +138,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
-
 
         expectedColor = UIColor(rgbaString: "#cc669964")
 
@@ -179,7 +159,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
 
-
         expectedColor = UIColor(argbString: "64cc6699")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor)
@@ -188,7 +167,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
-
 
         expectedColor = UIColor(argbString: "0x64CC6699")
 
@@ -199,7 +177,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
 
-
         expectedColor = UIColor(argbString: "0x64cc6699")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor)
@@ -209,7 +186,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
 
-
         expectedColor = UIColor(argbString: "#64CC6699")
 
         XCTAssertEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor)
@@ -218,7 +194,6 @@ class UIColor_HexColor_Tests: XCTestCase {
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 103.0/255.0, blue: 153.0/255.0, alpha: 100.0/255.0), expectedColor) // green is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 154.0/255.0, alpha: 100.0/255.0), expectedColor) // blue is different
         XCTAssertNotEqual(UIColor(red: 204.0/255.0, green: 102.0/255.0, blue: 153.0/255.0, alpha: 101.0/255.0), expectedColor) // alpha is different
-
 
         expectedColor = UIColor(argbString: "#64cc6699")
 

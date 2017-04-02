@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E916A4A41E90F32800D0C221 /* UIColor+Pastel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916A4A31E90F32800D0C221 /* UIColor+Pastel.swift */; };
 		E92A2C981D532A0200F7C3AC /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A2C971D532A0200F7C3AC /* UIColor+HexColor.swift */; };
 		E92A2C9D1D532CAF00F7C3AC /* UIColor+HexColor_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A2C9B1D532BD100F7C3AC /* UIColor+HexColor_Tests.swift */; };
 		E96309601CCE918200F4C238 /* UIKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E963095F1CCE918200F4C238 /* UIKitExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E916A4A31E90F32800D0C221 /* UIColor+Pastel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Pastel.swift"; sourceTree = "<group>"; };
 		E92A2C971D532A0200F7C3AC /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		E92A2C9B1D532BD100F7C3AC /* UIColor+HexColor_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor_Tests.swift"; sourceTree = "<group>"; };
 		E963095C1CCE918200F4C238 /* UIKitExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 			children = (
 				E96309781CCE92BD00F4C238 /* UIColor+Equatable.swift */,
 				E92A2C971D532A0200F7C3AC /* UIColor+HexColor.swift */,
+				E916A4A31E90F32800D0C221 /* UIColor+Pastel.swift */,
 			);
 			name = UIColor;
 			sourceTree = "<group>";
@@ -145,11 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E96309701CCE918200F4C238 /* Build configuration list for PBXNativeTarget "UIKitExtensions" */;
 			buildPhases = (
+				E916A4A21E9082EE00D0C221 /* Requirements check */,
+				E963097A1CCE92F700F4C238 /* SwiftLint */,
 				E96309571CCE918200F4C238 /* Sources */,
 				E96309581CCE918200F4C238 /* Frameworks */,
 				E96309591CCE918200F4C238 /* Headers */,
 				E963095A1CCE918200F4C238 /* Resources */,
-				E963097A1CCE92F700F4C238 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -234,6 +238,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		E916A4A21E9082EE00D0C221 /* Requirements check */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Requirements check";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ${CONFIGURATION} = \"Debug\" ]; then\n    ./check_requirements .requirements-debug.yml\nelse\n    ./check_requirements\nfi";
+		};
 		E963097A1CCE92F700F4C238 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +275,7 @@
 			files = (
 				E96309791CCE92BD00F4C238 /* UIColor+Equatable.swift in Sources */,
 				E92A2C981D532A0200F7C3AC /* UIColor+HexColor.swift in Sources */,
+				E916A4A41E90F32800D0C221 /* UIColor+Pastel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

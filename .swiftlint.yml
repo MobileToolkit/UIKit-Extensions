@@ -1,10 +1,11 @@
 disabled_rules:
   - type_name
+  - identifier_name
 
 excluded:
   - Carthage
-  - Example
 
 force_cast: warning
+force_try: warning
 
-line_length: 150
+line_length: 240
